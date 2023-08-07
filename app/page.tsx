@@ -15,7 +15,7 @@ export default function Home() {
     setLoading(true); // Set loading state to true when request starts
 
     try {
-      const response = await fetch('http://138.197.8.249:3000/api/generateOutline/generateOutline', {
+      const response = await fetch('138.197.8.249:3000/generateOutline', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
