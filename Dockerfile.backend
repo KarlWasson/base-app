@@ -1,0 +1,16 @@
+# Use an official Node runtime as a parent image
+FROM node:14
+
+# Set working directory in Docker container
+WORKDIR /app/server
+
+# Copy package.json and install dependencies
+COPY ./app/server/package.json .
+COPY ./app/server/package-lock.json .
+RUN npm install
+
+# Copy the rest of the backend code
+COPY ./app/server /app/server
+
+# Start the backend app
+CMD ["npm", "start"]
