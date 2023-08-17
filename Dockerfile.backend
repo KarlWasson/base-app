@@ -1,8 +1,11 @@
 # Use an official Node runtime as a parent image
 FROM node:14
 
-# Set working directory in Docker container
+# Create app directory
 WORKDIR /app/server
+
+# Create a user named "appuser"
+RUN useradd -m appuser
 
 # Copy package.json and install dependencies
 COPY ./app/server/package.json .
@@ -11,6 +14,9 @@ RUN npm install
 
 # Copy the rest of the backend code
 COPY ./app/server /app/server
+
+# Switch to "appuser"
+USER appuser
 
 # Start the backend app
 CMD ["npm", "start"]

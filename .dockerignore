@@ -1,0 +1,21 @@
+# Git related
+.git
+.gitignore
+
+# Node related
+node_modules
+npm-debug.log
+*.log
+
+# Next.js build output
+.next
+
+# Environment variables (depends on how you handle secrets in containers)
+.env.local
+
+# Editor & OS files
+*.log
+*.swp
+*.swo
+.DS_Store
+.vscode
