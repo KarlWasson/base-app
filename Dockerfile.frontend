@@ -22,4 +22,4 @@ RUN npm run build
 USER appuser
 
 # Start the Next.js app in production mode
-CMD ["npm", "start"]
+CMD ["npm", "dev"]

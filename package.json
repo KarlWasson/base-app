@@ -1,14 +1,24 @@
 {
   "name": "base-app",
   "version": "1.0.0",
-  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "description": "Generate blog outlines.",
   "main": "next.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev -H 0.0.0.0",
-    "build": "next build"
-
+    "build": "next build",
+    "start": "node server/app.js",
+    "next-start": "next start"
   },
   "author": "karl wasson",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "docx": "^8.2.2",
+    "next": "^13.4.19",
+    "picocolors": "^1.0.0",
+    "tailwindcss": "^3.3.3"
+  }
 }
