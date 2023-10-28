@@ -1,16 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  webpack: (config, { isServer, dev }) => {
-    if (dev && !isServer) {
-      config.watchOptions = {
-        poll: 800,
-        aggregateTimeout: 300,
-      };
-    }
-
-    return config;
-  },
+  // Your other Next.js configurations (if any) will remain here.
 }
 
 module.exports = nextConfig;

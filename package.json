@@ -7,18 +7,24 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "start": "node server/app.js",
+    "start": "nodemon server/app.js",
     "next-start": "next start"
   },
   "author": "karl wasson",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.8.1",
+    "nodemon": "^3.0.1",
+    "tailwindcss": "^3.3.3",
     "typescript": "^4.5.2"
   },
   "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
     "docx": "^8.2.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
     "next": "^13.4.19",
-    "picocolors": "^1.0.0",
-    "tailwindcss": "^3.3.3"
+    "picocolors": "^1.0.0"
   }
 }

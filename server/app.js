@@ -1,6 +1,9 @@
+require('dotenv').config({ path: './.env.local' });
 const express = require('express');
 const axios = require('axios');
 const app = express();
+
+
 
 // This is needed to be able to parse the JSON body of incoming requests
 app.use(express.json());
